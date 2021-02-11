@@ -72,6 +72,8 @@ a:active {
 
 .button {
   display: inline-block;
+  width: 150px;
+  text-align: center;
   color: #F4F4F2;
   background-color: #97293F;
   font-weight: 600;
