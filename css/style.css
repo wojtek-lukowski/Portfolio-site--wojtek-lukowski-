@@ -1,0 +1,65 @@
+/*
+Colors used:
+Backgorund: #F4F4F2;
+Header & Footer: #495464;
+Button default: #9A6670;
+Button hovered: #B56F7C;
+*/
+body {
+  background-color: #F4F4F2;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #424242;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #9A6670;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:visited {
+  color: #9A6670;
+  font-weight: 600;
+}
+a:hover {
+  color: #B56F7C;
+  font-weight: 600;
+  text-decoration: underline;
+}
+a:focus {
+  color: #B56F7C;
+  font-weight: 600;
+  text-decoration: underline;
+}
+a:active {
+  color: #E7A46A;
+  font-weight: 600;
+}
