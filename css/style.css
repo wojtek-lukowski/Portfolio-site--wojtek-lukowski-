@@ -93,7 +93,7 @@ a:active {
   border: 2px solid #97293F;
 }
 
-.button.contact:hover {
+.button.contact:hover, .button.contact:focus {
   background-color: #D03754;
   color: #F4F4F2;
 }
@@ -101,4 +101,37 @@ a:active {
 .button.contact:active {
   color: #F4F4F2;
   background-color: #E28B3F;
+}
+
+header {
+  background-color: #E8E8E8;
+  padding: 10px;
+  margin: 10px;
+  color: #F4F4F2;
+}
+
+.container {
+padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+footer {
+  background-color: #E8E8E8;
+  padding: 10px;
+  margin: 10px;
+  color: #495464;
+}
+
+.contact-icon {
+  max-width: 50px;
+}
+.contact-icon:hover {
+  opacity: 0.8;
 }
