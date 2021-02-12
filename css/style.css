@@ -46,37 +46,24 @@ img {
   width: 100%;
 }
 
-a {
+a, a:visited {
   color: #97293F;
   font-weight: 600;
   text-decoration: none;
 }
 
-a:visited {
-  color: #766E66;
-  font-weight: 600;
-}
-
-a:hover {
+a:hover, a:focus {
   color: #D03754;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-a:focus {
-  color: #D03754;
-  font-weight: 600;
   text-decoration: underline;
 }
 
 a:active {
   color: #E28B3F;
-  font-weight: 600;
 }
 
-.button {
+.button, .button:visited {
   display: inline-block;
-  width: 150px;
+  min-width: 150px;
   text-align: center;
   color: #F4F4F2;
   background-color: #97293F;
@@ -87,18 +74,7 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button:visited {
-  display: inline-block;
-  color: #F4F4F2;
-  background-color: #97293F;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #495464;
-  transition: 0.2s opacity;
-}
-
-.button:hover {
+.button:hover, .button:focus {
   color: #F4F4F2;
   background-color: #D03754;
   text-decoration: none;
@@ -110,7 +86,7 @@ a:active {
   text-decoration: none;
 }
 
-.button.contact {
+.button.contact, .button.contact:visited {
   background-color: transparent;
   color: #97293F;
   text-transform: uppercase;
@@ -124,12 +100,5 @@ a:active {
 
 .button.contact:active {
   color: #F4F4F2;
-  background-color: #D03754;
-}
-
-.button.contact:visited {
-  background-color: transparent;
-  color: #97293F;
-  text-transform: uppercase;
-  border: 2px solid #97293F;
+  background-color: #E28B3F;
 }
