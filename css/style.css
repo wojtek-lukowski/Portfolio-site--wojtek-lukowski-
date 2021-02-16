@@ -5,6 +5,10 @@ Header & Footer: #495464;
 Button default: #9A6670;
 Button hovered: #B56F7C;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #F4F4F2;
   font-family: 'Manrope', sans-serif;
@@ -42,7 +46,17 @@ h4 {
   font-weight: 500;
 }
 
+.description {
+  font-style: italic;
+  text-align: center;
+  margin-top: 4px;
+}
+
 img {
+  width: 100%;
+}
+
+iframe {
   width: 100%;
 }
 
@@ -86,16 +100,106 @@ a:active {
   text-decoration: none;
 }
 
+header {
+  background-color: #495464;
+  padding: 10px;
+  width: 100%;
+  color: #F4F4F2;
+  text-align: center;
+  position: fixed;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a, a:visited {
+  color: #F4F4F2;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav ul li a:hover, a:active {
+  color: #E28B3F;
+  text-decoration: underline;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+main {
+  padding-top: 175.45px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  border-bottom: 2px;
+  border-color: #E8E8E8;
+}
+
+.hero {
+  border-bottom: 2px;
+  border-color: #495464;
+}
+
+#herebottomborder {
+  border-bottom: 2px;
+  border-color: #495464;
+}
+
+.hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+footer {
+  background-color: #495464;
+  padding: 10px;
+  color: #F4F4F2;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+#linkedin {
+  width: 25px;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
 .button.contact, .button.contact:visited {
   background-color: transparent;
-  color: #97293F;
+  color: #F4F4F2;
   text-transform: uppercase;
-  border: 2px solid #97293F;
+  border: 2px solid #F4F4F2;
 }
 
 .button.contact:hover, .button.contact:focus {
-  background-color: #D03754;
-  color: #F4F4F2;
+  background-color: #F4F4F2;
+  color: #495464;
 }
 
 .button.contact:active {
@@ -103,35 +207,15 @@ a:active {
   background-color: #E28B3F;
 }
 
-header {
-  background-color: #E8E8E8;
-  padding: 10px;
-  margin: 10px;
+/*
+not needed with the new footer
+.contact-icon {
+  max-width: 50px;
+  display: inline-block;
   color: #F4F4F2;
 }
 
-.container {
-padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-}
-
-.logo {
-  max-width: 150px;
-}
-
-footer {
-  background-color: #E8E8E8;
-  padding: 10px;
-  margin: 10px;
-  color: #495464;
-}
-
-.contact-icon {
-  max-width: 50px;
-}
 .contact-icon:hover {
   opacity: 0.8;
 }
+*/
