@@ -150,13 +150,7 @@ main {
 }
 
 .hero {
-  border-bottom: 2px;
-  border-color: #495464;
-}
-
-#herebottomborder {
-  border-bottom: 2px;
-  border-color: #495464;
+  border-bottom: 2px solid #495464;
 }
 
 .hero h1 {
