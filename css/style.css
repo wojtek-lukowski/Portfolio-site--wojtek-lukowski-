@@ -133,11 +133,11 @@ nav ul li a:hover, a:active {
 }
 
 .logo {
-  max-width: 50px;
+  max-width: 70px;
 }
 
 main {
-  padding-top: 175.45px;
+  padding-top: 120px;
 }
 
 .container {
@@ -150,10 +150,6 @@ main {
   border-color: #E8E8E8;
 }
 
-.hero {
-  border-bottom: 2px solid #495464;
-}
-
 .hero h1 {
   text-align: center;
   margin: 0;
@@ -161,9 +157,14 @@ main {
 }
 
 .hero h1 span {
-font-size: 0.6em;
-display: block;
-margin-top: 1em;
+  font-size: 0.6em;
+  display: block;
+  margin-top: 1em;
+}
+
+#herebottomborder {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #495464;
 }
 
 footer {
@@ -202,6 +203,50 @@ footer h2 {
 .button.contact:active {
   color: #F4F4F2;
   background-color: #E28B3F;
+}
+
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+nav {
+  display: inline-block;
+  float: right;
+}
+font {
+  font-size: 18px;
+}
+
+.col-md-6 {
+  width: 50%;
+  margin-bottom: 20px
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
+h3 {
+margin-top: 0;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+
 }
 
 /*
