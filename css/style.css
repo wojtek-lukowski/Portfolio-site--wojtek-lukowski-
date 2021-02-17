@@ -58,6 +58,7 @@ img {
 
 iframe {
   width: 100%;
+  height: auto;
 }
 
 a, a:visited {
@@ -107,7 +108,7 @@ header {
   color: #F4F4F2;
   text-align: center;
   position: fixed;
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0 4px 4px 0px rgb(50 50 50 / 30%);
 }
 
 nav ul {
@@ -132,7 +133,7 @@ nav ul li a:hover, a:active {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 50px;
 }
 
 main {
@@ -159,6 +160,12 @@ main {
   padding: 0.67em 0;
 }
 
+.hero h1 span {
+font-size: 0.6em;
+display: block;
+margin-top: 1em;
+}
+
 footer {
   background-color: #495464;
   padding: 10px;
@@ -174,10 +181,6 @@ footer ul {
 footer ul li {
   display: inline-block;
   padding: 5px 20px;
-}
-
-#linkedin {
-  width: 25px;
 }
 
 footer h2 {
