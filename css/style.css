@@ -49,7 +49,7 @@ h4 {
 .description {
   font-style: italic;
   text-align: center;
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 img {
@@ -76,6 +76,22 @@ a:active {
   color: #E28B3F;
 }
 
+.pdf, .pdf:visited {
+  color: #495464;
+  font-style: italic;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.pdf:focus, .pdf:hover {
+  font-weight: 500;
+}
+
+.pdf:active {
+  color: #D03754;
+}
+
 .button, .button:visited {
   display: inline-block;
   min-width: 150px;
@@ -86,7 +102,8 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #495464;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: background-color;
 }
 
 .button:hover, .button:focus {
@@ -127,7 +144,7 @@ nav ul li a, a:visited {
   font-weight: 700;
 }
 
-nav ul li a:hover, a:active {
+nav ul li a:hover, a:focus, a:active {
   color: #E28B3F;
   text-decoration: underline;
 }
@@ -188,10 +205,13 @@ footer h2 {
   margin-bottom: 10px;
 }
 
+#copyright {
+  margin-top: 20px;
+}
+
 .button.contact, .button.contact:visited {
   background-color: transparent;
   color: #F4F4F2;
-  text-transform: uppercase;
   border: 2px solid #F4F4F2;
 }
 
@@ -206,48 +226,73 @@ footer h2 {
 }
 
 @media only screen and (min-width: 640px) {
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
+  header {
+    text-align: unset;
+    padding: 20px 15px 13px;
   }
-nav {
-  display: inline-block;
-  float: right;
-}
-font {
-  font-size: 18px;
-}
 
-.col-md-6 {
-  width: 50%;
-  margin-bottom: 20px
-}
+  nav {
+    display: inline-block;
+    float: right;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
+  font {
+    font-size: 18px;
+  }
 
-h3 {
-margin-top: 0;
-}
+  .col-md-6 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+  .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    width: 100%;
+    padding: 0 50px;
+  }
 
 }
 
-@media only screen and (min-width: 1440px) {
-
-}
+@media only screen and (min-width: 1440px) {}
 
 /*
 not needed with the new footer
