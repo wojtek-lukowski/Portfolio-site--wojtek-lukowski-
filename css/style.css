@@ -289,20 +289,61 @@ footer h2 {
     width: 100%;
     padding: 0 50px;
   }
+}
+
+@keyframes color-change {
+  0% {fill: #1BD0F8;}
+  25%{fill: #06195F;}
+  50% {fill: #37065F;}
+  75% {fill: #0DBC34;}
+  100% {fill: #EDD70D;}
+}
+
+.cloud {
+  animation-duration: 10s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes observe {
+  from {transform: translate(0 0);}
+to {transform: translate(0, 0);}
+to {transform: translate(-600px,0)}
+}
+
+.peryskop {
+  animation-duration: 30s;
+  animation-name: observe;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
 }
 
-@media only screen and (min-width: 1440px) {}
-
-/*
-not needed with the new footer
-.contact-icon {
-  max-width: 50px;
-  display: inline-block;
-  color: #F4F4F2;
+@keyframes sunrise {
+  from {transform: translate(0 0);}
+to {transform: translate(0,-275px);}
 }
 
-.contact-icon:hover {
-  opacity: 0.8;
+.sun {
+  animation-duration: 25s;
+  animation-name: sunrise;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
-*/
+
+@keyframes water-change {
+  from {fill: #383DBB;}
+  to {fill: #166658;}
+}
+
+.water {
+  animation-duration: 20s;
+  animation-name: water-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
