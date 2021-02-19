@@ -142,6 +142,8 @@ nav ul li a, a:visited {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
+  transition-duration: 0.2s;
+  transition-property: color, text-decoration;
 }
 
 nav ul li a:hover, a:focus, a:active {
@@ -151,6 +153,12 @@ nav ul li a:hover, a:focus, a:active {
 
 .logo {
   max-width: 70px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+.logo:hover, .logo:focus {
+  opacity: 0.8;
 }
 
 main {
@@ -292,11 +300,25 @@ footer h2 {
 }
 
 @keyframes color-change {
-  0% {fill: #1BD0F8;}
-  25%{fill: #06195F;}
-  50% {fill: #37065F;}
-  75% {fill: #0DBC34;}
-  100% {fill: #EDD70D;}
+  0% {
+    fill: #1BD0F8;
+  }
+
+  25% {
+    fill: #06195F;
+  }
+
+  50% {
+    fill: #37065F;
+  }
+
+  75% {
+    fill: #0DBC34;
+  }
+
+  100% {
+    fill: #EDD70D;
+  }
 }
 
 .cloud {
@@ -308,9 +330,17 @@ footer h2 {
 }
 
 @keyframes observe {
-  from {transform: translate(0 0);}
-to {transform: translate(0, 0);}
-to {transform: translate(-600px,0)}
+  from {
+    transform: translate(0 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-600px, 0)
+  }
 }
 
 .peryskop {
@@ -319,12 +349,16 @@ to {transform: translate(-600px,0)}
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
 }
 
 @keyframes sunrise {
-  from {transform: translate(0 0);}
-to {transform: translate(0,-275px);}
+  from {
+    transform: translate(0 0);
+  }
+
+  to {
+    transform: translate(0, -275px);
+  }
 }
 
 .sun {
@@ -336,8 +370,13 @@ to {transform: translate(0,-275px);}
 }
 
 @keyframes water-change {
-  from {fill: #383DBB;}
-  to {fill: #166658;}
+  from {
+    fill: #383DBB;
+  }
+
+  to {
+    fill: #166658;
+  }
 }
 
 .water {
