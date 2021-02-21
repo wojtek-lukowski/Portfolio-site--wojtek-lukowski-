@@ -73,33 +73,37 @@
         </div><!-- End of row -->
 
 
-        <div class="container">
+        <div class="row">
 
-
-          <div class="container">
-            <h3>CSS Animation example</h3>
+          <div class="column animation col-md-6 col-lg-7">
+            <svg width="100%" height="auto" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <rect width="800" height="600" fill="white" />
+                <path class="peryskop"
+                  d="M668 317C668 323.776 666.57 329.862 664.305 334.216C662.015 338.62 659.028 341 656 341C652.972 341 649.985 338.62 647.695 334.216C645.43 329.862 644 323.776 644 317C644 310.224 645.43 304.138 647.695 299.784C649.985 295.38 652.972 293 656 293C659.028 293 662.015 295.38 664.305 299.784C666.57 304.138 668 310.224 668 317Z"
+                  fill="#FBE312" stroke="black" stroke-width="2" />
+                <path class="peryskop" d="M656 292H742V480" stroke="black" stroke-width="2" />
+                <path class="peryskop" d="M655 342H706V480" stroke="black" stroke-width="2" />
+                <circle class="cloud" cx="85" cy="141" r="41" fill="#1BD0F8" />
+                <circle class="cloud" cx="216.5" cy="147.5" r="34.5" fill="#1BD0F8" />
+                <rect class="cloud" x="83" y="145" width="139" height="37" fill="#1BD0F8" />
+                <circle class="cloud" cx="152.5" cy="130.5" r="51.5" fill="#1BD0F8" />
+                <circle class="sun" cx="699" cy="366" r="88" fill="#FBE312" />
+                <path class="water" d="M114 386C66.1885 389.604 -1 429 -1 429V603H799V386C799 386 676.814 441.875 595 436C531.561 431.445 503.584 387.551 440 386C371.194 384.321 339.812 437.422 271 436C206.667 434.67 178.164 381.164 114 386Z"
+                  fill="#383DBB" stroke="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="800" height="600" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="column animation col-md-6 col-lg-5">
+            <h3>CSS animation example</h3>
+            <p>I created a svg image, added its code to my HTML code, added classes to the elements of the image and animated them using @keyframes (change of color, motion).
+            </p>
           </div><!-- End of text column -->
-
-          <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
-          <rect width="800" height="600" fill="white"/>
-          <path class="peryskop" d="M668 317C668 323.776 666.57 329.862 664.305 334.216C662.015 338.62 659.028 341 656 341C652.972 341 649.985 338.62 647.695 334.216C645.43 329.862 644 323.776 644 317C644 310.224 645.43 304.138 647.695 299.784C649.985 295.38 652.972 293 656 293C659.028 293 662.015 295.38 664.305 299.784C666.57 304.138 668 310.224 668 317Z" fill="#FBE312" stroke="black" stroke-width="2"/>
-          <path class="peryskop" d="M656 292H742V480" stroke="black" stroke-width="2"/>
-          <path class="peryskop" d="M655 342H706V480" stroke="black" stroke-width="2"/>
-          <circle class="cloud" cx="85" cy="141" r="41" fill="#1BD0F8"/>
-          <circle class="cloud" cx="216.5" cy="147.5" r="34.5" fill="#1BD0F8"/>
-          <rect class="cloud" x="83" y="145" width="139" height="37" fill="#1BD0F8"/>
-          <circle class="cloud" cx="152.5" cy="130.5" r="51.5" fill="#1BD0F8"/>
-          <circle class="sun" cx="699" cy="366" r="88" fill="#FBE312"/>
-          <path class="water" d="M114 386C66.1885 389.604 -1 429 -1 429V603H799V386C799 386 676.814 441.875 595 436C531.561 431.445 503.584 387.551 440 386C371.194 384.321 339.812 437.422 271 436C206.667 434.67 178.164 381.164 114 386Z" fill="#383DBB" stroke="black"/>
-          </g>
-          <defs>
-          <clipPath id="clip0">
-          <rect width="800" height="600" fill="white"/>
-          </clipPath>
-          </defs>
-          </svg>
-
         </div><!-- End of row -->
 
       </div><!-- End of container -->
@@ -107,7 +111,7 @@
   </main>
 
   <footer id="contact">
-    <div class="container">
+    <div class="container contact">
       <h2>Contact me</h2>
       <div class="contact">
         <ul>
@@ -121,7 +125,7 @@
     </div><!-- End of footer container -->
   </footer>
 
-<script src="js/script.js"> </script>
+  <script src="js/script.js"> </script>
 
 </body>
 

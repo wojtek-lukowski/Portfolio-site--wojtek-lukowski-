@@ -14,9 +14,11 @@
 
 <body>
   <header>
+
+
     <div class="header">
       <a href="index.html">
-      <img src="img/wlogo.svg" class="logo" alt="My logo">
+        <img src="img/wlogo.svg" class="logo" alt="My logo">
       </a>
       <nav>
         <ul>
@@ -29,6 +31,7 @@
   </header>
 
   <main>
+    <!--start changes -->
 
     <div class="section header">
       <div class="container">
@@ -37,58 +40,69 @@
     </div>
 
     <div class="section content">
+
       <div class="container">
-        <picture>
-          <source srcset="img/profile-image-600.jpg" media="(max-width:767px)">
-          <img src="img/profile-image-1200.jpg" alt="profile">
-        </picture>
+
         <div class="row">
+          <div class="column image col-lg-5">
+
+            <picture>
+              <source srcset="img/profile-image-600.jpg" media="(max-width:767px)">
+              <img src="img/profile-image-1200.jpg" alt="profile">
+            </picture>
+            <a href="img/wojtek-lukowski-resume.pdf" class="button resume" target="_blank">My resume</a>
+          </div>
+
           <div class="column col-lg-7" id="my-story">
             <h2>My story</h2>
             <p>I am a Düsseldorf based UX/UI Designer with an extensive marketing communication background. In my past roles I had to develop effective advertising campaigns that were appealing and relevant for potential consumers, using market
               research, defining and perfectly understanding the target group, their needs and problems and working for the clients and multiple stakeholders in extremely fast paced environment. I am looking forward to using the same approach and
               methods to develop easy to use and intuitive digital products that will positively impact people’s lives.
             </p>
-            <a href="img/wojtek-lukowski-resume.pdf" class="button" target="_blank">My resume</a>
+
           </div><!-- my story column -->
-          <div class="column col-lg-5">
-            <h2>Skills & Tools</h2>
-            <div class="row">
-              <div class="column col-md-6">
-                <h3>Skills</h3>
-                <ul>
-                  <li>Competitive analysis</li>
-                  <li>User Interviews</li>
-                  <li>Information architecture</li>
-                  <li>Wireframing</li>
-                  <li>Prototyping</li>
-                  <li>Usability testing</li>
-                  <li>A/B testing</li>
-                  <li>Preference testing</li>
-                  <li>UI design</li>
-                  <li>Remote work</li>
-                  <li>International coordination</li>
-                </ul>
-              </div><!-- skills -->
-              <div class="column col-md-6">
-                <h3>Tools</h3>
-                <ul>
-                  <li>Pen & paper</li>
-                  <li>Adobe Creative Suite</li>
-                  <li>Figma</li>
-                  <li>HTML, CSS, JavaScript</li>
-                  <li>GitHub</li>
-                </ul>
-              </div><!-- column-->
-            </div><!-- tools -->
-          </div><!-- skills & tools -->
-        </div><!-- main row -->
-      </div><!-- container -->
+        </div>
+
+
+<div class="container">
+          <h2 class="skills">Skills & Tools</h2>
+          <div class="row tools">
+            <div class="column col-md-6 col-lg-6">
+              <h3>Skills</h3>
+              <ul>
+                <li>Competitive analysis</li>
+                <li>User Interviews</li>
+                <li>Information architecture</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>Usability testing</li>
+                <li>A/B testing</li>
+                <li>Preference testing</li>
+                <li>UI design</li>
+                <li>Remote work</li>
+                <li>International coordination</li>
+              </ul>
+            </div><!-- skills -->
+            <div class="column col-md-6 col-lg-6">
+              <h3>Tools</h3>
+              <ul>
+                <li>Pen & paper</li>
+                <li>Adobe Creative Suite</li>
+                <li>Figma</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>GitHub</li>
+              </ul>
+            </div><!-- column-->
+          </div><!-- tools -->
+      </div><!-- main row -->
+
+
+    </div><!-- container -->
     </div><!-- section content -->
   </main>
 
   <footer id="contact">
-    <div class="container">
+    <div class="container contact">
       <h2>Contact me</h2>
       <div class="contact">
         <ul>
