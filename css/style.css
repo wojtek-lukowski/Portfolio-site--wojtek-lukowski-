@@ -36,12 +36,12 @@ h2 {
   font-weight: 600;
 }
 
-.contact h2 {
+footer h2 {
   font-size: 1.7em;
   padding-bottom: 15px;
 }
 
-.skills h2 {
+h2.skills {
   margin-bottom: 0;
 }
 
@@ -50,7 +50,7 @@ h3 {
   font-weight: 600;
 }
 
-.tools h3{
+.tools h3 {
   margin-top: 0;
 }
 
@@ -71,11 +71,21 @@ h4 {
 
 img {
   width: 100%;
+  border-radius: 3px;
+}
+
+svg {
+  border-radius: 3px;
+}
+
+img.gif {
+  border-radius: 20px;
 }
 
 iframe {
   width: 100%;
   height: auto;
+  border-radius: 3px;
 }
 
 a, a:visited {
@@ -93,6 +103,10 @@ a:active {
   color: #E28B3F;
 }
 
+header a:hover {
+  opacity: 100%;
+}
+
 .pdf, .pdf:visited {
   color: #373457;
   font-style: italic;
@@ -101,12 +115,8 @@ a:active {
   margin-top: 0px;
 }
 
-.pdf:focus, .pdf:hover {
+.pdf:focus, .pdf:hover, .pdf:active {
   font-weight: 500;
-}
-
-.pdf:active {
-  color: #E28B3F;
 }
 
 .button, .button:visited {
@@ -167,8 +177,8 @@ nav ul li a:hover, a:focus, a:active {
 }
 
 .logo:hover, .logo:focus {
-    transform: rotate(20deg);
-    transition: all 0.3s ease-in-out 0s;
+  transform: rotate(20deg);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 main {
@@ -203,24 +213,20 @@ main {
 
 .ia {
   width: 60%;
-  margin:auto;
+  margin: auto;
 }
 
-.prototype {
+.right {
   text-align: right;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-
-#herebottomborder {
+.bottomborder {
   padding-bottom: 20px;
-  border-bottom: 2px solid #495464;
+  border-bottom: 2px solid #373457;
 }
 
 .resume {
-margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 0;
 }
 
 footer {
@@ -350,7 +356,6 @@ footer h2 {
   animation-timing-function: linear;
 }
 
-
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -385,6 +390,13 @@ footer h2 {
     clear: both;
     display: table;
   }
+
+  .right {
+    text-align: left;
+  }
+
+  .prototype {
+    text-align: right;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -420,9 +432,17 @@ footer h2 {
     padding: 0 50px;
   }
 
-nav ul li {
-  padding: 0 30px 0 30px;
-}
+  .right {
+    text-align: left;
+  }
+
+  .prototype {
+    text-align: right;
+  }
+
+  nav ul li {
+    padding: 0 30px 0 30px;
+  }
 
   #my-story h2 {
     margin-top: 0;
