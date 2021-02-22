@@ -79,13 +79,13 @@ iframe {
 }
 
 a, a:visited {
-  color: #97293F;
+  color: #621C8D;
   font-weight: 600;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #D03754;
+  opacity: 80%;
   text-decoration: underline;
 }
 
@@ -94,7 +94,7 @@ a:active {
 }
 
 .pdf, .pdf:visited {
-  color: #495464;
+  color: #373457;
   font-style: italic;
   text-align: center;
   font-weight: 300;
@@ -106,7 +106,7 @@ a:active {
 }
 
 .pdf:active {
-  color: #D03754;
+  color: #E28B3F;
 }
 
 .button, .button:visited {
@@ -164,12 +164,11 @@ nav ul li a:hover, a:focus, a:active {
 
 .logo {
   max-width: 70px;
-  transition-duration: 0.2s;
-  transition-property: opacity;
 }
 
 .logo:hover, .logo:focus {
-  opacity: 0.8;
+    transform: rotate(20deg);
+    transition: all 0.3s ease-in-out 0s;
 }
 
 main {
@@ -213,6 +212,7 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 #herebottomborder {
   padding-bottom: 20px;
