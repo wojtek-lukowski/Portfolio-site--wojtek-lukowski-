@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wojtek Lukowski UX/UI Designer, Düsseldorf, Germany</title>
+  <link rel="shortcut icon" type="image/svg" href="img/favicon.svg">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="index.html">
+        <img src="img/wlogo.svg" class="logo" alt="My logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="section header">
+      <div class="container fixes">
+        <h1>How to improve Spotify<span>Six ideas to make the Spotify user experience even better.</span></h1>
+      </div>
+    </div>
+
+    <div class="section main-image">
+      <picture>
+        <source srcset="img/spotify/spotify@1.jpg" media="(max-width:767px)">
+        <img src="img/spotify/spotify@2.jpg" alt="weatherize">
+      </picture>
+    </div>
+
+
+<div class="container">
+
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="column text">
+            <h2>As a heavy Spotify user...</h2>
+            <p>...explanation
+            </p>
+            <div class="menu" id="menu">
+              <ul>
+                <li><a href="#fix1">Direct access to the artist's page from the "This is (artist)" playlist (mobile);</a></li>
+                <li><a href="#fix2">Direct access from the playlist to the album page of a track from this playlist (mobile);</a></li>
+                <li><a href="#fix3">Fix3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="fix1">
+      <h3>Accessing the artist's page from the "This is (artist)" playlist</h3>
+      <p>I like the idea of "This is (artist)" playlist. However, very often browsing this kind of list, I want to directly switch to the particualr artists' page.
+      </p>
+      <p>While on desktop the artist's page can be accessed directly (by clicking the artist name on one of the tracks), on mobile this possibility is missing and the task can be completed either by using the playback panel/screen (option availabvle
+        only when the playlist is currentle playing) or by using the three dots menu of one of the tracks and scrolling for the “View artist(s)” option. Both of them are not direct and thus far from perfect.
+      </p>
+      <p><b>Existing option 1:</b> using the playback panel/screen (available only when the playlist playing).
+      </p>
+      <picture>
+        <source srcset="img/spotify/fix1-1@1.png" media="(max-width:767px)">
+        <img src="img/spotify/fix1-1@2.png" alt="weatherize">
+      </picture>
+      <p><b>Existing option 2:</b> using the three dots menu on one of the tracks from the playlist.
+      </p>
+      <picture>
+        <source srcset="img/spotify/fix1-2@1.png" media="(max-width:767px)">
+        <img src="img/spotify/fix1-2@2.png" alt="weatherize">
+      </picture>
+      <p><b>Suggested solution:</b> implementing the artist's icon to the playlist screen (analogically to the way it is implemented on album screens), which directly links to the artist's page.
+      </p>
+      <picture>
+        <source srcset="img/spotify/fix1-3@1.png" media="(max-width:767px)">
+        <img src="img/spotify/fix1-3@2.png" alt="weatherize">
+      </picture>
+      <p>The alternative solution would be to link the big, playlist icon to the artist's page. The advantage ot this option would be the fact that the playlist icon is bigger, thus easier to tap. The disadvantage - that this solution has not yet
+        been used by the service, so the users are not used to it.
+      </p>
+      <div class="alwaysright">
+        <a href="#menu" class="button backtolist">Back to top</a>
+      </div>
+    </div>
+
+    <div class="container" id="fix2">
+      <h3>Direct access from the playlist to the album page of a track from this playlist (mobile)</h3>
+      <p>When I listen to different playlists, it happens to me relatively often that I want to see the album pages of some selcted tracks from the playlist (not necessary the tracks which is playing at the very moment). This is very true for example for the "Release Radar" playlist, which is a Spotify generated playlist with new releases customized especially for the user, based on the music and artists he listens to. I run the playlist and then scan the list of tracks. Whenever I find a track from the artist I am interested in, I immediately want to see whether it is just a signle new track or a complete new album.
+      </p>
+      <p>While on desktop, it can be done by clicking the album title in the playlist's list of tracks, on mobile it requires more actions.
+      </p>
+      <picture>
+        <source srcset="img/spotify/fix2-1@1.png" media="(max-width:767px)">
+        <img src="img/spotify/fix2-1@2.png" alt="weatherize">
+      </picture>
+      <p><b>Suggested solution:</b> Implementing the link to the album page to the album cover icon in the playlist.</p>
+      <picture>
+        <source srcset="img/spotify/fix2-2@1.png" media="(max-width:767px)">
+        <img src="img/spotify/fix2-2@2.png" alt="weatherize">
+      </picture>
+      <div class="alwaysright">
+        <a href="#menu" class="button backtolist">Back to list</a>
+      </div>
+    </div>
+
+    <div class="container" id="fix3">
+      <h3>Alarm clock</h3>
+      <p>alarm clock text</p>
+      <p>alarm clock text</p>
+      <picture>
+        <source srcset="img/spotify/fix3-1@1.png" media="(max-width:767px)">
+        <img src="img/spotify/fix3-1@2.png" alt="weatherize">
+      </picture>
+      <p><b>Suggested solution:</b> Implementing</p>
+      <picture>
+        <source srcset="img/spotify/fix3-2@1.png" media="(max-width:767px)">
+        <img src="img/spotify/fix3-2@2.png" alt="weatherize">
+      </picture>
+      <div class="alwaysright">
+        <a href="#menu" class="button backtolist">Back to list</a>
+      </div>
+    </div>
+
+
+</div>
+  </main>
+
+  <footer id="contact">
+    <div class="container contact">
+      <h2>Contact me</h2>
+      <div class="contact">
+        <ul>
+          <li><a href="mailto:wojtek_lukowski@yahoo.com" class="button contact">Email</a></li>
+          <li> <a href="tel:+491600000000" class="button contact">Phone</a></li>
+          <li> <a href="https://www.linkedin.com/in/wojciechlukowski/" class="button contact" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <p id="copyright">Copyright Wojtek Lukowski 2021
+      </p>
+    </div><!-- End of footer container -->
+  </footer>
+
+  <script src="js/script.js"> </script>
+
+</body>
+
+</html>

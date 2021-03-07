@@ -1,6 +1,6 @@
 /*
 Colors used:
-Backgorund: #F4F4F2;
+Background: #F4F4F2;
 Header & Footer: #373457;
 Button default: #621C8D;
 Button hovered: #B56F7C;
@@ -58,6 +58,10 @@ h3 {
   margin-top: 0;
 }
 
+h3.notopmargin {
+margin-top: 0;
+}
+
 h4 {
   font-size: 1.35em;
   font-weight: 500;
@@ -89,18 +93,14 @@ iframe {
 }
 
 a, a:visited {
-  color: #621C8D;
+  color: #373457;
   font-weight: 600;
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, a:active {
   opacity: 80%;
   text-decoration: underline;
-}
-
-a:active {
-  color: #E28B3F;
 }
 
 header a:hover {
@@ -172,6 +172,14 @@ nav ul li a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
+.menu a, .menu a:visited {
+  color: #373457;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+
 .logo {
   max-width: 70px;
 }
@@ -202,6 +210,19 @@ main {
 }
 
 .hero h1 span {
+  font-size: 0.6em;
+  display: block;
+  margin-top: 1em;
+}
+
+.fixes h1 span {
+  font-size: 0.6em;
+  display: block;
+  margin-top: 1em;
+}
+
+
+.progress h3 span, h2 span {
   font-size: 0.6em;
   display: block;
   margin-top: 1em;
@@ -267,6 +288,26 @@ footer h2 {
   color: #495464;
   opacity: 100%;
 }
+
+.button.backtolist, .button.backtolist:visited{
+  background-color: transparent;
+  color: #621C8D;
+  border: 2px solid #621C8D;
+  transition-property: background-color;
+  margin-bottom: 30px;
+}
+
+.button.backtolist:hover, .button.backtolist:focus, .button.backtolist:active{
+  background-color: #621C8D;
+  color: #F4F4F2;
+  border: 2px solid #621C8D;
+  opacity: 100%;
+}
+
+.alwaysright {
+  text-align: right;
+}
+
 
 @keyframes color-change {
   0% {
@@ -379,6 +420,22 @@ footer h2 {
   .col-md-4 {
     width: 33.33%;
   }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+h2.nomargintop {
+  margin-top: 0;
+}
+
+p.nomargintop {
+  margin-top: 0;
+}
 
   [class*="col-"] {
     float: left;
