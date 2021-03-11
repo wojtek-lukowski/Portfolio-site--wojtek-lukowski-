@@ -10,21 +10,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/58b03ec2b5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="header">
-      <a href="index.html">
-        <img src="img/wlogo.svg" class="logo" alt="My logo">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="img/wlogo.svg" class="logo" alt="My logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -51,7 +55,10 @@
           <div class="row">
             <div class="column text">
               <h2>Background</h2>
-              <p>I am a heavy Spotify user. I usually listen to the music, using the app all day long, from early morning into late night. Spotify allows me to come back to the tunes I love, but also experiment and discover new sounds. Therefore, I am quite well acquainted with Spotify’s user interface. While, overall, I appreciate it, I have some ideas how I personally would make it even better. Below, you will find these ideas explained. Please remember that these improvements are designed from my personal perspective and I have not consulted them with other users nor conducted any tests or research. I also have no knowledge whether Spotify team have looked at similar issues and whether potentially they decided not to follow up on them.
+              <p>I am a heavy Spotify user. I usually listen to the music, using the app all day long, from early morning into late night. Spotify allows me to come back to the tunes I love, but also experiment and discover new sounds. Therefore, I
+                am quite well acquainted with Spotify’s user interface. While, overall, I appreciate it, I have some ideas how I personally would make it even better. Below, you will find these ideas explained. Please remember that these improvements
+                are designed from my personal perspective and I have not consulted them with other users nor conducted any tests or research. I also have no knowledge whether Spotify team have looked at similar issues and whether potentially they
+                decided not to follow up on them.
               </p>
               <p>These are the ideas:</p>
               <div class="menu" id="menu">
@@ -151,11 +158,14 @@
         <h3>Album View Mode for Playlist</h3>
         <p>This problem is a bit more complicated, as it spans across more than one feature, so it requires more explanations.
         </p>
-        <p>What I miss in general is some kind of a <b>more developed system to manage, catalogue and store albums</b>. My “Albums” section is a one big mess, as I throw there all albums that I want to remember, regardless what the reason for that is. So, I
+        <p>What I miss in general is some kind of a <b>more developed system to manage, catalogue and store albums</b>. My “Albums” section is a one big mess, as I throw there all albums that I want to remember, regardless what the reason for that
+          is. So, I
           have it altogether, side-by-side, classical music with hip-hop and heavy metal with new age, albums for sport, dining and sleeping, albums that I always come back to with albums that I listen now, but I know that I will forget them in
           couple of days and on top, albums of the artists I have never heard about before, but I just want to check them out at some point. All perfectly mixed up in a sequence in which they have been added (ok, I can change the sorting to “Titles”
-          or “Artists”, but that does not really help much, as Chopin will be next to The Cure, Mozart next to Metallica and Rachmaninoff next to Rammstein… not the type of sorting I have in mind). So, every time I want to find an album from my collection, I <b>need to browse
-          through the chaos of albums</b> (no, it’s not about simply typing the title in the finder – sometimes I want to see all of my e.g. “sport” albums and then decide which one I am going to be listening, but I need to see them all first. Or, for
+          or “Artists”, but that does not really help much, as Chopin will be next to The Cure, Mozart next to Metallica and Rachmaninoff next to Rammstein… not the type of sorting I have in mind). So, every time I want to find an album from my
+          collection, I <b>need to browse
+            through the chaos of albums</b> (no, it’s not about simply typing the title in the finder – sometimes I want to see all of my e.g. “sport” albums and then decide which one I am going to be listening, but I need to see them all first. Or,
+          for
           the artists that are added “for later” I very often do not remember neither the name of the artist or the title of the album – I just need to see the cover, as that is all I remember).
         </p>
         <p>Now, that could easily be solved if, instead of saving my albums in Albums, I would create separate dedicated playlists and save the albums there, in the respective playlists. So, I would have for example a playlist for “Sport”, “Sleep”,
@@ -164,10 +174,13 @@
         <p>..there is <b>no way to clearly see what albums are on the particular playlist</b> and there is no efficient way to manage them. Try to perform the following tasks:
         </p>
         <ul>
-          <li><b>Quick overview of the albums included in the playlist.</b> No, you can’t see the album covers displayed next to each other. Instead, you have a list of the tracks with either an album icon assigned to each track (mobile) or album title listed
+          <li><b>Quick overview of the albums included in the playlist.</b> No, you can’t see the album covers displayed next to each other. Instead, you have a list of the tracks with either an album icon assigned to each track (mobile) or album
+            title listed
             (desktop). Now, try to scroll for example thorough all the 200 tracks of the “Chopin: Classical Music for Reading” to see what is the next album on the playlist.
           </li>
-          <li><b>Removing a complete album (or all the tracks from one album that are on the particular playlist)</b>, especially while using a smartphone. While by using the "Find in Playlist" search, I can actually find all the tracks belonging to one album, but I still need to select them all and delete (desktop) or delete one-by (either by ”edit playlist” reached by the playlist three dots menu or by opening the individual three dots menus of the particular tracks for the mobile version). Good luck, especially, if you now decide to remove all the 200 tracks of the "Chopin: Classical Music for Reading" from your playlist.
+          <li><b>Removing a complete album (or all the tracks from one album that are on the particular playlist)</b>, especially while using a smartphone. While by using the "Find in Playlist" search, I can actually find all the tracks belonging to
+            one album, but I still need to select them all and delete (desktop) or delete one-by (either by ”edit playlist” reached by the playlist three dots menu or by opening the individual three dots menus of the particular tracks for the mobile
+            version). Good luck, especially, if you now decide to remove all the 200 tracks of the "Chopin: Classical Music for Reading" from your playlist.
           </li>
         </ul>
         <p>The example playlist below has only four albums, but image that there are fifty or even more of them on the playlist...
@@ -178,7 +191,8 @@
         </picture>
         <p class="description">The playlists consisting of only four albums spans for ten screens and there is no possibility to see just the four album covers next to each other.
         </p>
-        <p>Therefore, I have designed a way to <b>implement the “album cover view”</b> (which already exists at Spotify – in the Albums section) <b>to the playlists</b>. I know that it can be controversial, as lot of playlists consist of single or some selected
+        <p>Therefore, I have designed a way to <b>implement the “album cover view”</b> (which already exists at Spotify – in the Albums section) <b>to the playlists</b>. I know that it can be controversial, as lot of playlists consist of single or
+          some selected
           tracks rather than complete albums, so this listing would show “incomplete” albums (and in extreme cases there would be exactly as many albums as tracks in a playlist if each track comes from a different album). Nevertheless, I believe that
           there are people who still listen to albums and not only to single tracks, so the options to just see the playlist's albums would be helpful for them (well, it would be definitely helpful for me).
         </p>
@@ -219,6 +233,7 @@
     </div><!-- End of footer container -->
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/script.js"> </script>
 
 </body>
