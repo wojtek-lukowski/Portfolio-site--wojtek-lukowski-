@@ -59,7 +59,7 @@ h3 {
 }
 
 h3.notopmargin {
-margin-top: 0;
+  margin-top: 0;
 }
 
 h4 {
@@ -96,6 +96,7 @@ a, a:visited {
   color: #373457;
   font-weight: 600;
   text-decoration: none;
+  transition-property: opacity, text-decoration;
 }
 
 a:hover, a:focus, a:active {
@@ -183,20 +184,18 @@ nav ul li a:hover, a:focus, a:active {
   font-size: 20px;
 }
 
-.navtoggle.responsive li {
-  display: block;
-}
-
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid #E28B3F;
+  text-align: center;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -205,11 +204,12 @@ nav ul li a:hover, a:focus, a:active {
   text-align: center;
   font-weight: 500;
   margin-top: 0px;
-  transition: background-color;}
-
+  transition: background-color;
+}
 
 .logo {
   max-width: 70px;
+  transition-property: transform;
 }
 
 .logo:hover, .logo:focus {
@@ -248,7 +248,6 @@ main {
   display: block;
   margin-top: 1em;
 }
-
 
 .progress h3 span, h2 span {
   font-size: 0.6em;
@@ -317,7 +316,7 @@ footer h2 {
   opacity: 100%;
 }
 
-.button.backtolist, .button.backtolist:visited{
+.button.backtolist, .button.backtolist:visited {
   background-color: transparent;
   color: #621C8D;
   border: 2px solid #621C8D;
@@ -325,7 +324,7 @@ footer h2 {
   margin-bottom: 30px;
 }
 
-.button.backtolist:hover, .button.backtolist:focus, .button.backtolist:active{
+.button.backtolist:hover, .button.backtolist:focus, .button.backtolist:active {
   background-color: #621C8D;
   color: #F4F4F2;
   border: 2px solid #621C8D;
@@ -335,7 +334,6 @@ footer h2 {
 .alwaysright {
   text-align: right;
 }
-
 
 @keyframes color-change {
   0% {
@@ -448,9 +446,9 @@ footer h2 {
     display: inline-block;
   }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -469,13 +467,13 @@ footer h2 {
     width: 58.33%;
   }
 
-h2.nomargintop {
-  margin-top: 0;
-}
+  h2.nomargintop {
+    margin-top: 0;
+  }
 
-p.nomargintop {
-  margin-top: 0;
-}
+  p.nomargintop {
+    margin-top: 0;
+  }
 
   [class*="col-"] {
     float: left;
@@ -494,58 +492,58 @@ p.nomargintop {
 
   .prototype {
     text-align: right;
-}
-
-@media only screen and (min-width: 1024px) {
-  .col-md-6 {
-    width: 100%;
-    margin-bottom: 20px;
   }
 
-  .col-lg-4 {
-    width: 33.33%;
-  }
+  @media only screen and (min-width: 1024px) {
+    .col-md-6 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
+    .col-lg-4 {
+      width: 33.33%;
+    }
 
-  .col-lg-6 {
-    width: 50%;
-  }
+    .col-lg-5 {
+      width: 41.66%;
+    }
 
-  .col-lg-7 {
-    width: 58.33%;
-  }
+    .col-lg-6 {
+      width: 50%;
+    }
 
-  .container {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .col-lg-7 {
+      width: 58.33%;
+    }
 
-  .header {
-    width: 100%;
-    padding: 0 50px;
-  }
+    .container {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  .right {
-    text-align: left;
-  }
+    .header {
+      width: 100%;
+      padding: 0 50px;
+    }
 
-  .prototype {
-    text-align: right;
-  }
+    .right {
+      text-align: left;
+    }
 
-  nav ul li {
-    padding: 0 30px 0 30px;
-  }
+    .prototype {
+      text-align: right;
+    }
 
-  #my-story h2 {
-    margin-top: 0;
-  }
+    nav ul li {
+      padding: 0 30px 0 30px;
+    }
 
-  #my-story {
-    padding-left: 10px;
+    #my-story h2 {
+      margin-top: 0;
+    }
+
+    #my-story {
+      padding-left: 10px;
+    }
   }
-}
