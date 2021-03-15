@@ -84,6 +84,8 @@ svg {
 
 img.gif {
   border-radius: 20px;
+  max-height: 400px;
+  width: auto;
 }
 
 iframe {
