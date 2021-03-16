@@ -93,6 +93,9 @@ img.gif {
   width: auto;
 }
 
+.center {
+  text-align: center;
+}
 
 iframe {
   width: 100%;
@@ -287,6 +290,7 @@ main {
 
 .right {
   text-align: right;
+  margin-bottom: 30px;
 }
 
 .bottomborder {
@@ -509,6 +513,7 @@ footer h2 {
 
   .right {
     text-align: left;
+    margin-bottom: 0;
   }
 
   .prototype {
