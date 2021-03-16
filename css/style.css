@@ -29,11 +29,16 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 600;
+}
+
+h2.subheader {
+  text-align: center;
 }
 
 footer h2 {
@@ -107,6 +112,18 @@ a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
+.body, .body:visited {
+  color: #621C8D;
+  font-weight: 600;
+  transition-property: opacity;
+}
+
+.body:hover, .body:focus, .body:active {
+  opacity: 80%;
+  text-decoration: none;
+}
+
+
 header a:hover {
   opacity: 100%;
 }
@@ -117,6 +134,7 @@ header a:hover {
   text-align: center;
   font-weight: 300;
   margin-top: 0px;
+  transition-property: font-weight;
 }
 
 .pdf:focus, .pdf:hover, .pdf:active {
