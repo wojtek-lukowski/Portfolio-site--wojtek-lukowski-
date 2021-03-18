@@ -32,6 +32,10 @@ h1 {
   text-align: center;
 }
 
+h1.left{
+  text-align: left;
+}
+
 h2 {
   font-size: 2.25em;
   font-weight: 600;
@@ -64,12 +68,17 @@ h3 {
 }
 
 h3.notopmargin {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 500;
+}
+
+p.center {
+  text-align: center;
+  font-size: 1.05em;
 }
 
 .description {
@@ -115,17 +124,20 @@ a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
-.body, .body:visited {
-  color: #621C8D;
-  font-weight: 600;
-  transition-property: opacity;
+.body a, .body a:visited {
+  color: #373457;
+  font-weight: 500;
+  text-decoration: underline;
+  transition-property: color;
 }
 
-.body:hover, .body:focus, .body:active {
-  opacity: 80%;
-  text-decoration: none;
+.body a:hover, .body a:focus, .body a:active {
+color: #621C8D;
 }
 
+a.img:hover, a.img:active, a.img:focus {
+  opacity: 100%;
+}
 
 header a:hover {
   opacity: 100%;
@@ -179,16 +191,16 @@ nav ul {
   margin: 0;
 }
 
-nav ul li a, a:visited {
+nav ul li a, nav ul li a:visited {
   color: #F4F4F2;
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   transition-duration: 0.2s;
-  transition-property: color, text-decoration;
+  transition-property: color;
 }
 
-nav ul li a:hover, a:focus, a:active {
+nav ul li a:hover, a ul li a:focus, a ul li a:active {
   color: #E28B3F;
   text-decoration: underline;
 }
@@ -223,6 +235,7 @@ nav ul li a:hover, a:focus, a:active {
   padding: 0 0 10px;
 }
 
+/*
 .menu a, .menu a:visited {
   color: #373457;
   text-align: center;
@@ -230,6 +243,7 @@ nav ul li a:hover, a:focus, a:active {
   margin-top: 0px;
   transition: background-color;
 }
+*/
 
 .logo {
   max-width: 70px;
@@ -465,6 +479,10 @@ footer h2 {
 
   nav ul li {
     display: inline-block;
+  }
+
+  h3.notopmargin {
+    margin-top: 0;
   }
 
   .navtoggle li:not(:last-child) {
