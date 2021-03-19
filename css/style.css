@@ -10,12 +10,12 @@ Button hovered: #B56F7C;
 }
 
 body {
-  background-color: #F4F4F2;
+  background-color: #0B192E;
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #373457;
+  color: #CDD7F5;
 }
 
 b {
@@ -177,12 +177,11 @@ header a:hover {
 }
 
 header {
-  background-color: #373457;
+  background-color: #0B192E;
   padding: 10px;
   width: 100%;
-  color: #F4F4F2;
+  color: #CDD7F5;
   position: fixed;
-  box-shadow: 0 4px 4px 0px rgb(50 50 50 / 30%);
 }
 
 nav ul {
@@ -192,7 +191,7 @@ nav ul {
 }
 
 nav ul li a, nav ul li a:visited {
-  color: #F4F4F2;
+  color: #CDD7F5;
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
@@ -201,7 +200,7 @@ nav ul li a, nav ul li a:visited {
 }
 
 nav ul li a:hover, a ul li a:focus, a ul li a:active {
-  color: #E28B3F;
+  color: #6CE4FE;
   text-decoration: underline;
 }
 
