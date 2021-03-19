@@ -27,9 +27,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 3em;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
+}
+
+.dark {
+color: #8993AF;
+}
+
+.blue {
+  color: #6CE4FE;
 }
 
 h1.left{
@@ -160,18 +168,18 @@ header a:hover {
   display: inline-block;
   min-width: 150px;
   text-align: center;
-  color: #F4F4F2;
-  background-color: #621C8D;
+  color: #6CE4FE;
+  background-color: transparent;
   font-weight: 600;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #495464;
+  border: 1px solid #6CE4FE;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 
 .button:hover, .button:focus, .button.active {
-  color: #F4F4F2;
+  color: #6CE4FE;
   opacity: 80%;
   text-decoration: none;
 }
@@ -269,9 +277,8 @@ main {
 }
 
 .hero h1 {
-  text-align: center;
+  text-align: left;
   margin: 0;
-  padding: 0.67em 0;
 }
 
 .hero h1 span {
