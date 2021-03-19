@@ -22,8 +22,8 @@
         </a>
         <nav>
           <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
@@ -36,17 +36,23 @@
 
     <div class="section hero body">
       <div class="container">
-        <p class="blue">Hi, my name is
+        <p class="blue intro">Hi, my name is
         </p>
         <h1>Wojtek Lukowski.</h1>
         <h1 class="dark">
-          I design things for the web.
+          I design to solve problems.
         </h1>
+        <br>
+        <p class="dark narrow">I am a Düsseldorf based UX/UI Designer with an extensive marketing communications background.</p>
       </div>
     </div>
-    <div class="section projects">
+    <div class="projects">
       <div class="container">
-        <h2>My Projects</h2>
+        <div id="projects">
+          <br>
+        </div>
+
+        <h2 class="section">My Projects</h2>
 
         <div class="row">
           <div class="column col-md-6 col-lg-7">
@@ -57,7 +63,7 @@
           </div>
           <div class="column col-md-6 col-lg-5">
             <h3 class="notopmargin">Weatherize</h3>
-            <p>A <b>responsive web</b> weather <b>app</b> for the water sports enthusiasts. Are you brave enough?</p>
+            <p class="dark">A <b>responsive web</b> weather <b>app</b> for the water sports enthusiasts. Are you brave enough?</p>
             <div class="right">
               <a href="weatherize.html" class="button">View project</a>
             </div>
@@ -73,7 +79,7 @@
           </div>
           <div class="column col-md-6 col-lg-5">
             <h3 class="notopmargin">How to improve Spotify</h3>
-            <p>As a heavy user of Spotify, I have some ideas, <b>how to improve its user experience</b>.</p>
+            <p class="dark">As a heavy user of Spotify, I have some ideas, <b>how to improve its user experience</b>.</p>
             <div class="right">
               <a href="spotify.html" class="button">View project</a>
             </div>
@@ -89,7 +95,8 @@
           </div>
           <div class="column col-md-6 col-lg-5 progress">
             <h3 class="notopmargin">ShareCare</h3>
-            <p>There are parents who work and thus are <b>looking for a care for their kids</b>. There are also parents who stay at home with their kids and are <b>ready to take care of additional kids. Why not help them to find each other</b>?
+            <p class="dark">There are parents who work and thus are <b>looking for a care for their kids</b>. There are also parents who stay at home with their kids and are <b>ready to take care of additional kids. Why not help them to find each
+                other</b>?
             </p>
             <div class="right">
               <div id="portfolio">
@@ -108,7 +115,8 @@
           </div>
           <div class="column col-md-6 col-lg-5 progress">
             <h3 class="notopmargin">My Portfolio Site</h3>
-            <p>This case study will present the process of <b>design and development</b> of my own portfolio site (yes, the one you are currently looking at). I have <b>designed it and then coded myself using HTML, CSS and JavaScript</b>.
+            <p class="dark">This case study will present the process of <b>design and development</b> of my own portfolio site (yes, the one you are currently looking at). I have <b>designed it and then coded myself using HTML, CSS and
+                JavaScript</b>.
             </p>
             <div class="right">
               <a href="#portfolio" class="button" onclick=underConstruction()>View project</a>
@@ -144,17 +152,88 @@
           </div>
           <div class="column animation col-md-6 col-lg-5">
             <h3>CSS animation example</h3>
-            <p>I created a svg image, added its code to my HTML code, added classes to the elements of the image and animated them using @keyframes (motion and change of color).
+            <p class="dark">I created a svg image, added its code to my HTML code, added classes to the elements of the image and animated them using @keyframes (motion and change of color).
             </p>
           </div><!-- End of text column -->
         </div><!-- End of row -->
       </div>
     </div><!-- End of container -->
+
+    <div id="about">
+
+    </div>
+
+    <div class="section header">
+      <div class="container">
+        <h2 class="section">About me</h2>
+      </div>
+    </div>
+
+    <div class="section content">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="column image col-md-5 col-lg-5">
+
+            <picture>
+              <source srcset="img/profile-image-600.jpg" media="(max-width:767px)">
+              <img src="img/profile-image-600.jpg" alt="profile">
+            </picture>
+            <a href="img/wojtek-lukowski-resume.pdf" class="button resume" target="_blank">My resume</a>
+          </div>
+
+          <div class="column col-md-7 col-lg-7" id="my-story">
+            <p class="nomargintop dark">I am a Düsseldorf based UX/UI Designer with an extensive marketing communication background. In my past roles I had to develop effective advertising campaigns that were appealing and relevant for potential
+              consumers, using market
+              research, defining and perfectly understanding the target group, their needs and problems and working for the clients and multiple stakeholders in extremely fast paced environment. I am looking forward to using the same approach and
+              methods to develop easy to use and intuitive digital products that will positively impact people’s lives.
+            </p>
+
+          </div><!-- my story column -->
+        </div>
+
+
+        <div class="container">
+          <div class="row tools">
+            <div class="column col-md-6 col-lg-6">
+              <h3>Skills</h3>
+              <ul class="dark">
+                <li>Competitive analysis</li>
+                <li>User Interviews</li>
+                <li>Information architecture</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>Usability testing</li>
+                <li>A/B testing</li>
+                <li>Preference testing</li>
+                <li>UI design</li>
+                <li>Remote work</li>
+                <li>International coordination</li>
+              </ul>
+            </div><!-- skills -->
+            <div class="column col-md-6 col-lg-6">
+              <h3>Tools</h3>
+              <ul class="dark">
+                <li>Pen & paper</li>
+                <li>Adobe Creative Suite</li>
+                <li>Figma</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>GitHub</li>
+              </ul>
+            </div><!-- column-->
+          </div><!-- tools -->
+        </div><!-- main row -->
+
+
+      </div><!-- container -->
+    </div><!-- section content -->
+
   </main>
 
   <footer id="contact">
     <div class="container contact">
-      <h2>Contact me</h2>
+      <h2 class="light">Contact me</h2>
       <div class="contact">
         <ul>
           <li><a href="mailto:wojtek_lukowski@yahoo.com" class="button contact">Email</a></li>

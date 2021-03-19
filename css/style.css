@@ -32,6 +32,10 @@ h1 {
   text-align: left;
 }
 
+.light {
+  color: #CDD7F5;
+}
+
 .dark {
 color: #8993AF;
 }
@@ -39,6 +43,11 @@ color: #8993AF;
 .blue {
   color: #6CE4FE;
 }
+
+.center {
+  text-align: center;
+}
+
 
 h1.left{
   text-align: left;
@@ -51,6 +60,10 @@ h2 {
 
 h2.subheader {
   text-align: center;
+}
+
+h2.section {
+  margin-top: 130px;;
 }
 
 footer h2 {
@@ -84,9 +97,12 @@ h4 {
   font-weight: 500;
 }
 
-p.center {
-  text-align: center;
-  font-size: 1.05em;
+p.intro {
+  font-size: 1.3em;
+}
+
+p.narrow {
+  max-width: 250px;
 }
 
 .description {
@@ -149,19 +165,6 @@ a.img:hover, a.img:active, a.img:focus {
 
 header a:hover {
   opacity: 100%;
-}
-
-.pdf, .pdf:visited {
-  color: #373457;
-  font-style: italic;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 0px;
-  transition-property: font-weight;
-}
-
-.pdf:focus, .pdf:hover, .pdf:active {
-  font-weight: 500;
 }
 
 .button, .button:visited {
@@ -258,7 +261,7 @@ nav ul li a:hover, a ul li a:focus, a ul li a:active {
 }
 
 .logo:hover, .logo:focus {
-  transform: rotate(20deg);
+  transform: rotate(10deg);
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -268,6 +271,15 @@ main {
 
 .container {
   padding: 0 15px;
+}
+
+.backgroundlight {
+  background-color: #ffffff;
+  color: #0B192E;
+}
+
+.main-image {
+  padding-top: 50px;
 }
 
 .row {
@@ -288,12 +300,6 @@ main {
 }
 
 .fixes h1 span {
-  font-size: 0.6em;
-  display: block;
-  margin-top: 1em;
-}
-
-.progress h3 span, h2 span {
   font-size: 0.6em;
   display: block;
   margin-top: 1em;
@@ -323,10 +329,12 @@ main {
 }
 
 footer {
-  background-color: #373457;
+  background-color: #0B192E;
   padding: 10px;
-  color: #F4F4F2;
+  color: #8993AF;
   text-align: center;
+  height: 550px;
+  position: relative;
 }
 
 footer ul {
@@ -344,21 +352,9 @@ footer h2 {
 }
 
 #copyright {
-  padding-top: 20px;
   font-size: .7em;
-}
-
-.button.contact, .button.contact:visited {
-  background-color: transparent;
-  color: #F4F4F2;
-  border: 2px solid #F4F4F2;
-  transition-property: background-color;
-}
-
-.button.contact:hover, .button.contact:focus, .button.contact:active {
-  background-color: #F4F4F2;
-  color: #495464;
-  opacity: 100%;
+  position: absolute;
+  bottom: 5px;
 }
 
 .button.backtolist, .button.backtolist:visited {
@@ -544,6 +540,12 @@ footer h2 {
     text-align: right;
   }
 
+  .onlight {
+      background-color: #0B192E;
+      border: none;
+      color: #CDD7F5;
+  }
+
   @media only screen and (min-width: 1024px) {
     .col-md-6 {
       width: 100%;
@@ -579,10 +581,6 @@ footer h2 {
 
     .right {
       text-align: left;
-    }
-
-    .prototype {
-      text-align: right;
     }
 
     nav ul li {
