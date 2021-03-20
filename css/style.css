@@ -9,6 +9,10 @@ Button hovered: #B56F7C;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0B192E;
   font-family: 'Manrope', sans-serif;
@@ -37,7 +41,7 @@ h1 {
 }
 
 .dark {
-color: #8993AF;
+  color: #8993AF;
 }
 
 .blue {
@@ -48,8 +52,7 @@ color: #8993AF;
   text-align: center;
 }
 
-
-h1.left{
+h1.left {
   text-align: left;
 }
 
@@ -63,7 +66,8 @@ h2.subheader {
 }
 
 h2.section {
-  margin-top: 130px;;
+  margin-top: 130px;
+  ;
 }
 
 footer h2 {
@@ -156,7 +160,7 @@ a:hover, a:focus, a:active {
 }
 
 .body a:hover, .body a:focus, .body a:active {
-color: #621C8D;
+  color: #621C8D;
 }
 
 a.img:hover, a.img:active, a.img:focus {
@@ -185,6 +189,10 @@ header a:hover {
   color: #6CE4FE;
   opacity: 80%;
   text-decoration: none;
+}
+
+#navbar {
+  transition: top 0.3s;
 }
 
 header {
@@ -244,16 +252,6 @@ nav ul li a:hover, a ul li a:focus, a ul li a:active {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
-/*
-.menu a, .menu a:visited {
-  color: #373457;
-  text-align: center;
-  font-weight: 500;
-  margin-top: 0px;
-  transition: background-color;
-}
-*/
 
 .logo {
   max-width: 70px;
@@ -541,9 +539,9 @@ footer h2 {
   }
 
   .onlight {
-      background-color: #0B192E;
-      border: none;
-      color: #CDD7F5;
+    background-color: #0B192E;
+    border: none;
+    color: #CDD7F5;
   }
 
   @media only screen and (min-width: 1024px) {
