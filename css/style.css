@@ -171,6 +171,23 @@ header a:hover {
   opacity: 100%;
 }
 
+.img-blue {
+  position: relative;
+  display: inline-block;
+}
+
+.img-blue .img-clr {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.img-blue:hover .img-clr {
+  display: inline;
+}
+
 .button, .button:visited {
   display: inline-block;
   min-width: 150px;
@@ -186,13 +203,17 @@ header a:hover {
 }
 
 .button:hover, .button:focus, .button.active {
-  color: #6CE4FE;
+  background-color: #121F31;
   opacity: 80%;
   text-decoration: none;
 }
 
 #navbar {
   transition: top 0.3s;
+}
+
+.paddingtop {
+  padding-top: 40px;
 }
 
 header {
@@ -326,12 +347,15 @@ main {
   margin: 10px 10px 10px 0;
 }
 
+.padding60 {
+  padding-right: 80px;
+}
+
 footer {
   background-color: #0B192E;
   padding: 10px;
   color: #8993AF;
   text-align: center;
-  height: 550px;
   position: relative;
 }
 
@@ -351,8 +375,6 @@ footer h2 {
 
 #copyright {
   font-size: .7em;
-  position: absolute;
-  bottom: 5px;
 }
 
 .button.backtolist, .button.backtolist:visited {
