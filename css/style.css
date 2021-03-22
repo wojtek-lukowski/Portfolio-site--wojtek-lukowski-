@@ -109,6 +109,12 @@ p.narrow {
   max-width: 250px;
 }
 
+b.clr {
+  font-weight: 100;
+  color: #6CE4FE;
+  opacity: 80%;
+}
+
 .description {
   font-style: italic;
   text-align: center;
@@ -153,14 +159,14 @@ a:hover, a:focus, a:active {
 }
 
 .body a, .body a:visited {
-  color: #373457;
+  color: #0B192E;
   font-weight: 500;
   text-decoration: underline;
-  transition-property: color;
+  transition-property: opacity;
 }
 
 .body a:hover, .body a:focus, .body a:active {
-  color: #621C8D;
+  opacity: 80%;
 }
 
 a.img:hover, a.img:active, a.img:focus {
@@ -266,7 +272,7 @@ nav ul li a:hover, a ul li a:focus, a ul li a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #E28B3F;
+  border-top: 1px solid #6CE4FE;
   text-align: center;
 }
 
@@ -340,7 +346,7 @@ main {
 
 .bottomborder {
   padding-bottom: 20px;
-  border-bottom: 2px solid #373457;
+  border-bottom: 2px solid #0B192E;
 }
 
 .resume {
@@ -379,16 +385,16 @@ footer h2 {
 
 .button.backtolist, .button.backtolist:visited {
   background-color: transparent;
-  color: #621C8D;
-  border: 2px solid #621C8D;
+  color: #0B192E;
+  border: 2px solid #0B192E;
   transition-property: background-color;
   margin-bottom: 30px;
 }
 
 .button.backtolist:hover, .button.backtolist:focus, .button.backtolist:active {
-  background-color: #621C8D;
-  color: #F4F4F2;
-  border: 2px solid #621C8D;
+  background-color: #0B192E;
+  color: #6CE4FE;
+  border: 2px solid #0B192E;
   opacity: 100%;
 }
 

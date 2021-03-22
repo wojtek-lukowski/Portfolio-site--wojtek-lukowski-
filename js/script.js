@@ -37,6 +37,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+
 /*
 /// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
