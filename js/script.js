@@ -29,7 +29,7 @@ console.log(screen.width);
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos && screen.width > 640) {
+  if (prevScrollpos > currentScrollPos && screen.width) {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-83px";
