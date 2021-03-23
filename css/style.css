@@ -56,6 +56,10 @@ h1.left {
   text-align: left;
 }
 
+h1.mob-sml {
+  font-size: 2em;
+}
+
 h2 {
   font-size: 2.25em;
   font-weight: 600;
@@ -118,6 +122,10 @@ b.neon {
   font-style: italic;
   text-align: center;
   margin-top: 0px;
+}
+
+.mob-only {
+  margin-top: 0;
 }
 
 img {
@@ -353,7 +361,7 @@ main {
 }
 
 .padding60 {
-  padding-right: 80px;
+  padding-right: 10px;
 }
 
 footer {
@@ -509,13 +517,20 @@ footer h2 {
     display: inline-block;
   }
 
+  h1.mob-sml {
+    font-size: 3em;
+  }
+
   h3.notopmargin {
     margin-top: 0;
   }
 
   h2.section {
-    padding-top: 130px;
-    ;
+    margin-top: 130px;
+  }
+
+  .mob-only {
+    margin-top: 70px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -575,6 +590,10 @@ footer h2 {
     background-color: #0B192E;
     border: none;
     color: #CDD7F5;
+  }
+
+  .padding60 {
+    padding-right: 80px;
   }
 
   @media only screen and (min-width: 1024px) {
