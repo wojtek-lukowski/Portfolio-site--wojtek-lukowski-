@@ -411,23 +411,6 @@ footer h2 {
   margin-top: 10px;
 }
 
-.hover_image:hover {
-  text-decoration: none
-}
-
-/* Optional (avoid undesired underscore if a is used as wrapper) */
-.hide {
-  display: none
-}
-
-/* Do the shift: */
-.hover_image:hover img:first-child {
-  display: none
-}
-
-.hover_image:hover img:last-child {
-  display: inline-block
-}
 
 @keyframes color-change {
   0% {
@@ -614,6 +597,34 @@ footer h2 {
   .padding60 {
     padding-right: 80px;
   }
+
+  .hover_image:hover {
+    text-decoration: none
+  }
+
+  /* Optional (avoid undesired underscore if a is used as wrapper) */
+  .hide {
+    display: none
+  }
+
+  /* Do the shift: */
+  .hover_image:hover picture:first-child {
+    display: none
+  }
+
+  .hover_image:hover picture:last-child {
+    display: inline-block
+  }
+
+  .hover_image:hover img:first-child {
+    display: none
+  }
+
+  .hover_image:hover img:last-child {
+    display: inline-block
+  }
+
+
 
   @media only screen and (min-width: 1024px) {
     .col-md-6 {
