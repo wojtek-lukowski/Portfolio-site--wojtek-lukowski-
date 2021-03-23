@@ -227,6 +227,7 @@ header {
   width: 100%;
   color: #CDD7F5;
   position: fixed;
+  margin-top: 5px;
 }
 
 nav ul {
