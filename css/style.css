@@ -411,6 +411,9 @@ footer h2 {
   margin-top: 10px;
 }
 
+.hide {
+  display: none
+}
 
 @keyframes color-change {
   0% {
@@ -499,6 +502,8 @@ footer h2 {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+
 
 @media only screen and (min-width: 640px) {
   header {
@@ -603,9 +608,6 @@ footer h2 {
   }
 
   /* Optional (avoid undesired underscore if a is used as wrapper) */
-  .hide {
-    display: none
-  }
 
   /* Do the shift: */
   .hover_image:hover picture:first-child {
