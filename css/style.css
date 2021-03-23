@@ -235,6 +235,7 @@ header {
   width: 100%;
   color: #CDD7F5;
   position: fixed;
+  z-index: 999;
 }
 
 nav ul {
@@ -408,6 +409,24 @@ footer h2 {
 .alwaysright {
   text-align: right;
   margin-top: 10px;
+}
+
+.hover_image:hover {
+  text-decoration: none
+}
+
+/* Optional (avoid undesired underscore if a is used as wrapper) */
+.hide {
+  display: none
+}
+
+/* Do the shift: */
+.hover_image:hover img:first-child {
+  display: none
+}
+
+.hover_image:hover img:last-child {
+  display: inline-block
 }
 
 @keyframes color-change {
