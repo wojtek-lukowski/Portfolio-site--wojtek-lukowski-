@@ -66,8 +66,7 @@ h2.subheader {
 }
 
 h2.section {
-  margin-top: 130px;
-  ;
+  padding-top: 10px;
 }
 
 footer h2 {
@@ -228,6 +227,7 @@ header {
   width: 100%;
   color: #CDD7F5;
   position: fixed;
+  margin-top: 5px;
 }
 
 nav ul {
@@ -400,6 +400,7 @@ footer h2 {
 
 .alwaysright {
   text-align: right;
+  margin-top: 10px;
 }
 
 @keyframes color-change {
@@ -511,6 +512,11 @@ footer h2 {
 
   h3.notopmargin {
     margin-top: 0;
+  }
+
+  h2.section {
+    padding-top: 130px;
+    ;
   }
 
   .navtoggle li:not(:last-child) {
