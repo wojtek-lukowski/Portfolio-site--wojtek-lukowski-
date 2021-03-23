@@ -57,7 +57,7 @@ h1.left {
 }
 
 h1.mob-sml {
-  font-size: 2em;
+  font-size: 2.1em;
 }
 
 h2 {
@@ -607,9 +607,6 @@ footer h2 {
     text-decoration: none
   }
 
-  /* Optional (avoid undesired underscore if a is used as wrapper) */
-
-  /* Do the shift: */
   .hover_image:hover picture:first-child {
     display: none
   }
