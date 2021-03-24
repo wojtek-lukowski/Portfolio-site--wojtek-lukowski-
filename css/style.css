@@ -87,10 +87,6 @@ h3 {
   font-weight: 600;
 }
 
-.tools h3 {
-  margin-top: 0;
-}
-
 .animation h3 {
   margin-top: 0;
 }
@@ -173,7 +169,7 @@ a:hover, a:focus, a:active {
 }
 
 .body a:hover, .body a:focus, .body a:active {
-  opacity: 80%;
+  opacity: 70%;
 }
 
 a.img:hover, a.img:active, a.img:focus {
@@ -182,23 +178,6 @@ a.img:hover, a.img:active, a.img:focus {
 
 header a:hover {
   opacity: 100%;
-}
-
-.img-blue {
-  position: relative;
-  display: inline-block;
-}
-
-.img-blue .img-clr {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-.img-blue:hover .img-clr {
-  display: inline;
 }
 
 .button, .button:visited {
@@ -312,7 +291,7 @@ main {
 }
 
 .main-image {
-  padding-top: 50px;
+  padding-top: 0;
 }
 
 .row {
@@ -415,6 +394,29 @@ footer h2 {
   display: none
 }
 
+.casestudy {
+  background-color: #ffffff;
+  color: #0B192E;
+  padding-top: 5px;
+}
+
+.center {
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.center a {
+  margin: 5px 5px;
+}
+
+.email a{
+  color: #8993AF;
+  text-decoration: none;
+}
+.email a:hover {
+  color: #6CE4FE;
+}
+
 @keyframes color-change {
   0% {
     fill: #1BD0F8;
@@ -503,8 +505,6 @@ footer h2 {
   animation-timing-function: linear;
 }
 
-
-
 @media only screen and (min-width: 640px) {
   header {
     padding: 20px 15px 13px;
@@ -565,6 +565,15 @@ footer h2 {
     width: 58.33%;
   }
 
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .firstanim {
+    margin-top: 40px;
+    text-align: right;
+  }
+
   h2.nomargintop {
     margin-top: 0;
   }
@@ -623,8 +632,6 @@ footer h2 {
     display: inline-block
   }
 
-
-
   @media only screen and (min-width: 1024px) {
     .col-md-6 {
       width: 100%;
@@ -645,6 +652,10 @@ footer h2 {
 
     .col-lg-7 {
       width: 58.33%;
+    }
+
+    .col-lg-8 {
+      width: 66.66%;
     }
 
     .container {
