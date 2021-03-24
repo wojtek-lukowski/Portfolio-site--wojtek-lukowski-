@@ -57,7 +57,7 @@ h1.left {
 }
 
 h1.mob-sml {
-  font-size: 2.1em;
+  font-size: 2.25em;
 }
 
 h2 {
@@ -70,7 +70,7 @@ h2.subheader {
 }
 
 h2.section {
-  padding-top: 10px;
+  padding: 10px 0 0 10px;
 }
 
 footer h2 {
@@ -350,6 +350,7 @@ footer {
   color: #8993AF;
   text-align: center;
   position: relative;
+  margin-top: 300px;
 }
 
 footer ul {
@@ -368,6 +369,7 @@ footer h2 {
 
 #copyright {
   font-size: .7em;
+  margin-top: 250px;
 }
 
 .button.backtolist, .button.backtolist:visited {
@@ -395,12 +397,13 @@ footer h2 {
 }
 
 .casestudy {
-  background-color: #ffffff;
+  background-color: #F4F4F2;
   color: #0B192E;
   padding-top: 5px;
 }
 
 .center {
+  margin-top: 20px;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -415,6 +418,19 @@ footer h2 {
 }
 .email a:hover {
   color: #6CE4FE;
+}
+
+.blueline {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #6CE4FE;
+}
+
+.notmobile {
+  display:none;
+}
+
+.firstanim {
+  text-align: center;
 }
 
 @keyframes color-change {
@@ -630,6 +646,10 @@ footer h2 {
 
   .hover_image:hover img:last-child {
     display: inline-block
+  }
+
+  .notmobile {
+    display: block;
   }
 
   @media only screen and (min-width: 1024px) {
