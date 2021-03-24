@@ -268,7 +268,7 @@ nav ul li a:hover, a ul li a:focus, a ul li a:active {
 }
 
 .logo {
-  max-width: 70px;
+  max-width: 50px;
   transition-property: transform;
 }
 
@@ -639,6 +639,23 @@ footer h2 {
 
   .hover_image:hover img:last-child {
     display: inline-block
+  }
+
+  /*
+  .hover_image:hover svg:first-child {
+    display: none
+  }
+
+  .hover_image:hover svg:last-child {
+    display: inline-block
+  }
+*/
+  rect.hide {
+    display: inline-block;
+  }
+
+  rect.hide:hover {
+    display: none;
   }
 
   .notmobile {
