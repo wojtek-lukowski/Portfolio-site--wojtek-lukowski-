@@ -350,7 +350,7 @@ footer {
   color: #8993AF;
   text-align: center;
   position: relative;
-  margin-top: 300px;
+  margin-top: 10px;
 }
 
 footer ul {
@@ -369,7 +369,7 @@ footer h2 {
 
 #copyright {
   font-size: .7em;
-  margin-top: 250px;
+  margin-top: 20px;
 }
 
 .button.backtolist, .button.backtolist:visited {
@@ -397,7 +397,7 @@ footer h2 {
 }
 
 .casestudy {
-  background-color: #F4F4F2;
+  background-color: #ffffff;
   color: #0B192E;
   padding-top: 5px;
 }
@@ -412,25 +412,26 @@ footer h2 {
   margin: 5px 5px;
 }
 
-.email a{
+.email a {
   color: #8993AF;
   text-decoration: none;
 }
+
 .email a:hover {
   color: #6CE4FE;
 }
 
-.blueline {
-  padding-bottom: 100px;
-  border-bottom: 1px solid #6CE4FE;
-}
-
 .notmobile {
-  display:none;
+  display: none;
 }
 
 .firstanim {
   text-align: center;
+}
+
+.blueline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6CE4FE;
 }
 
 @keyframes color-change {
@@ -546,14 +547,6 @@ footer h2 {
 
   h3.notopmargin {
     margin-top: 0;
-  }
-
-  h2.section {
-    margin-top: 130px;
-  }
-
-  .mob-only {
-    margin-top: 70px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -697,6 +690,10 @@ footer h2 {
       padding: 0 30px 0 30px;
     }
 
+    footer {
+      margin-top: 300px;
+    }
+
     #my-story h2 {
       margin-top: 0;
     }
@@ -704,4 +701,17 @@ footer h2 {
     #my-story {
       padding-left: 10px;
     }
-  }
+
+    h2.section {
+      margin-top: 130px;
+    }
+
+    .blueline {
+      padding-bottom: 100px;
+      border-bottom: 1px solid #6CE4FE;
+    }
+
+    #copyright {
+      font-size: .7em;
+      margin-top: 250px;
+    }
