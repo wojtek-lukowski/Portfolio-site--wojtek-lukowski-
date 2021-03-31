@@ -4,14 +4,17 @@
 <head>
   <meta charset="utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GPGTH3DMT0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPGTH3DMT0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-GPGTH3DMT0');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GPGTH3DMT0');
+  </script>
   <title>Wojtek Lukowski UX/UI Designer, Frontend Development, Düsseldorf, Germany</title>
   <link rel="shortcut icon" type="image/svg" href="img/favicon.svg">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -135,14 +138,14 @@
             <div class="right">
               <div id="portfolio">
               </div>
-              <a href="" class="button" onclick="underConstruction()">View project</a>
+              <a href="#projects" class="button" onclick="underConstruction()">View project</a>
             </div>
           </div><!-- End of text column -->
         </div><!-- End of row -->
 
         <div class="row">
           <div class="column col-md-6 col-lg-7">
-            <a class="hover_image" href="#projects" onclick=underConstruction()>
+            <a class="hover_image" href="portfolio.html">
               <div>
                 <picture>
                   <source srcset="img/portfolio/portfolio-blue@2.jpg" media="(max-width:767px)">
@@ -162,7 +165,7 @@
                 JavaScript</b>.
             </p>
             <div class="right">
-              <a href="#projects" class="button" onclick=underConstruction()>View project</a>
+              <a href="portfolio.html" class="button">View project</a>
             </div>
           </div><!-- End of text column -->
         </div><!-- End of row -->
