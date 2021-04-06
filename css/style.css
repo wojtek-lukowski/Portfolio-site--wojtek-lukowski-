@@ -105,6 +105,7 @@ h4 {
 
 p.intro {
   font-size: 1.3em;
+  padding-top: 30px;
 }
 
 p.narrow {
@@ -277,7 +278,7 @@ a ul li a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #6CE4FE;
+  border-top: 1px solid #6CE4FE80;
   text-align: center;
 }
 
@@ -292,12 +293,12 @@ a ul li a:active {
 
 .logo:hover,
 .logo:focus {
-  transform: rotate(10deg);
+  transform: rotate(5deg);
   transition: all 0.3s ease-in-out 0s;
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 88px;
 }
 
 .container {
@@ -679,6 +680,12 @@ footer h2 {
   .notmobile {
     display: block;
   }
+
+  .blueline {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #6CE4FE;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -716,6 +723,8 @@ footer h2 {
   .header {
     width: 100%;
     padding: 0 50px;
+    max-width: 1600px;
+    margin: auto;
   }
 
   .right {
@@ -740,11 +749,6 @@ footer h2 {
 
   h2.section {
     margin-top: 130px;
-  }
-
-  .blueline {
-    padding-bottom: 100px;
-    border-bottom: 1px solid #6CE4FE;
   }
 
   #copyright {
