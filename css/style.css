@@ -453,6 +453,44 @@ footer h2 {
   border-bottom: 1px solid #6CE4FE;
 }
 
+.name {
+  animation-name: swipe-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes swipe-left {
+  0% {
+    left: 100%;
+  }
+70% {
+  left: -5%;
+}
+  100% {
+    left: 0%;
+  }
+}
+
+.swipe-right {
+  animation-name: swipe-right;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes swipe-right {
+  0% {
+    left: -20%;
+  }
+70% {
+  left: 10%;
+}
+  100% {
+    left: 0%;
+  }
+}
+
 @keyframes color-change {
   0% {
     fill: #1BD0F8;
@@ -685,7 +723,6 @@ footer h2 {
     padding-bottom: 100px;
     border-bottom: 1px solid #6CE4FE;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
