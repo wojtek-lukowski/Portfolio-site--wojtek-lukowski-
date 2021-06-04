@@ -464,9 +464,11 @@ footer h2 {
   0% {
     left: 100%;
   }
-70% {
-  left: -5%;
-}
+
+  70% {
+    left: -5%;
+  }
+
   100% {
     left: 0%;
   }
@@ -483,9 +485,11 @@ footer h2 {
   0% {
     left: -20%;
   }
-70% {
-  left: 10%;
-}
+
+  70% {
+    left: 10%;
+  }
+
   100% {
     left: 0%;
   }
@@ -578,6 +582,18 @@ footer h2 {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+.max600 {
+  max-width: 500px;
+  margin: 30px auto 0 auto;
+}
+
+#full, #full1, #full2, #full3 {
+  width: 100%;
+  margin-top: 20px;
+}
+
+
 
 @media only screen and (min-width: 640px) {
   header {
